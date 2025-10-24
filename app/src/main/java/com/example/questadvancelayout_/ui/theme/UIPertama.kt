@@ -20,6 +20,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.AlignmentLine
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -68,6 +69,22 @@ fun AktivitasPertama(modifier: Modifier){
                 )
 
                 Spacer(modifier = Modifier.width(width = 30.dp))
+                Column() {
+                    Text(
+                        text = stringResource(id = R.string.nama),
+                        fontSize = 30.dp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier= Modifier.padding(top = 15.dp)
+                    )
+
+                    Text(
+                        text = stringResource(id = R.string.alamat),
+                        fontSize = 20.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                }
             }
         }
     }
