@@ -98,8 +98,26 @@ fun ProfileScreen(modifier: Modifier) {
             ),
             shape = RoundedCornerShape(16.dp)
         ){
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(horizontal = 16.dp)
+            ){
+                Icon(Icons.Default.Lock, "Privacy", tint = Color.White)
+                Spacer(modifier = Modifier.width(16.dp))
+                Text(
+                    stringResource(id = R.string.menu_1),
+                    fontSize = 16.sp,
+                    color = Color.White,
+                    modifier = Modifier.weight(1f)
+                )
+                Icon(Icons.Default,KeyboardArrowRight, null, tint = Color.Gray)
+            }
 
         }
+
+
 
     }
 
