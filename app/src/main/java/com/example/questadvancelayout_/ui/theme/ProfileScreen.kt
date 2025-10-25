@@ -66,7 +66,10 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
             fontWeight = FontWeight.Bold,
             color = Color.White
         )
-
-
-
+        Spacer(modifier = Modifier.height(4.dp))
+        Text(
+            text = "@abra_yudhistira",
+            fontSize = 16.sp,
+            color = Color.Gray
+        )
 }
