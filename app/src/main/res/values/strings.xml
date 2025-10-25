@@ -10,5 +10,8 @@
     <string name="namautama">LobakKiroy Garage</string>
     <string name="namaalias">\@lobakkiroy_garage</string>
     <string name="bio_profile">Finest Tuning Workshop in Town</string>
+    <string name="menu_1">Paket Bore Up</string>
+    <string name="menu_2">Paket Flow dan ECU</string>
+    <string name="menu_3">Paket CNC dan Piping</string>
 
 </resources>
