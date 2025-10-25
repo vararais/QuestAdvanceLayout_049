@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.questadvancelayout_.ui.theme.AktivitasPertama
+import com.example.questadvancelayout_.ui.theme.ProfileScreen
 import com.example.questadvancelayout_.ui.theme.QuestAdvanceLayout_Theme
 
 class MainActivity : ComponentActivity() {
@@ -21,7 +22,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             QuestAdvanceLayout_Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    AktivitasPertama(
+                    ProfileScreen(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }

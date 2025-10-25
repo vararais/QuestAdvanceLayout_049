@@ -68,10 +68,31 @@ fun ProfileScreen(modifier: Modifier) {
             horizontalArrangement = Arrangement.spacedBy(20.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Icon(Icons.Default.Star, "G+", tint = Color.White, modifier = Modifier.size(20.dp))
-            Icon(Icons.Default.Star, "F", tint = Color.White, modifier = Modifier.size(20.dp))
-            Icon(Icons.Default.Star, "G", tint = Color.White, modifier = Modifier.size(20.dp))
-            Icon(Icons.Default.Star, "In", tint = Color.White, modifier = Modifier.size(20.dp))
+            Image(
+                painter = painterResource(id = R.drawable.alfa),
+                contentDescription = "Alfa Logo",
+                modifier = Modifier.size(30.dp)
+            )
+            Image(
+                painter = painterResource(id = R.drawable.bentley),
+                contentDescription = "Bentley Logo",
+                modifier = Modifier.size(30.dp)
+            )
+            Image(
+                painter = painterResource(id = R.drawable.mercy),
+                contentDescription = "Mercy Logo",
+                modifier = Modifier.size(30.dp)
+            )
+            Image(
+                painter = painterResource(id = R.drawable.porsc),
+                contentDescription = "Porsche Logo",
+                modifier = Modifier.size(30.dp)
+            )
+            Image(
+                painter = painterResource(id = R.drawable.rr),
+                contentDescription = "Rolls Royce Logo",
+                modifier = Modifier.size(30.dp)
+            )
         }
 
         Spacer(modifier = Modifier.height(16.dp))
@@ -190,7 +211,7 @@ fun ProfileScreen(modifier: Modifier) {
                 .height(50.dp)
                 .fillMaxWidth(0.8f),
             colors = CardDefaults.cardColors(
-                containerColor = Color.Yellow
+                containerColor = Color.Red
             ),
             shape = RoundedCornerShape(25.dp)
         ){
