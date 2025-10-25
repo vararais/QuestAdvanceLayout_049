@@ -33,16 +33,17 @@ import androidx.compose.ui.unit.sp
 import com.example.questadvancelayout_.R
 
 @Composable
-fun ProfileScreen(modifier: Modifier = Modifier) {
+fun ProfileScreen(modifier: Modifier) {
     Column(
-        modifier = modifier
+        modifier = Modifier
             .fillMaxSize()
             .background(Color(0xFF121212))
             .padding(top = 60.dp)
             .padding(horizontal = 24.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        val gambar = painterResource(id = R.drawable.profile_pic)
+
+        val gambar = painterResource(id = R.drawable.mechanic)
         Image(
             painter = gambar,
             contentDescription = "Foto Profil",
@@ -53,7 +54,6 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
         )
 
         Spacer(modifier = Modifier.height(16.dp))
-    }
 
         Row(
             horizontalArrangement = Arrangement.spacedBy(20.dp),
