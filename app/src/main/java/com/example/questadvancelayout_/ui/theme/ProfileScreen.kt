@@ -33,6 +33,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.questadvancelayout_.R
+import androidx.compose.material3.Icon
+import androidx.compose.material.icons.filled.ExitToApp
+import androidx.compose.material.icons.filled.KeyboardArrowRight
+import androidx.compose.material.icons.filled.List
+import androidx.compose.material.icons.filled.Lock
+import androidx.compose.material.icons.filled.Settings
+import androidx.compose.material.icons.filled.Star
 
 @Composable
 fun ProfileScreen(modifier: Modifier) {
@@ -113,7 +120,7 @@ fun ProfileScreen(modifier: Modifier) {
                     color = Color.White,
                     modifier = Modifier.weight(1f)
                 )
-                Icon(Icons.Default,KeyboardArrowRight, null, tint = Color.Gray)
+                Icon(Icons.Default.KeyboardArrowRight, null, tint = Color.Gray)
             }
 
         }
