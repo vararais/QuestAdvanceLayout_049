@@ -89,9 +89,18 @@ fun ProfileScreen(modifier: Modifier) {
 
         Spacer(modifier = Modifier.height(32.dp))
 
+        Card(
+            modifier= Modifier
+                .height(56.dp)
+                .fillMaxWidth(),
+            colors = CardDefaults.cardColors(
+                containerColor = Color(0xFF2C2C2E)
+            ),
+            shape = RoundedCornerShape(16.dp)
+        ){
+
+        }
+
     }
-
-
-
 
 }
