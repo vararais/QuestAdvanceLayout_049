@@ -82,7 +82,7 @@ fun ProfileScreen(modifier: Modifier) {
         )
         Spacer(modifier = Modifier.height(24.dp))
         Text(
-            text = "Saya seorang Back End Developer",
+            text = stringResource(id = R.string.bio_profile),
             fontSize = 16.sp,
             color = Color.White
         )
