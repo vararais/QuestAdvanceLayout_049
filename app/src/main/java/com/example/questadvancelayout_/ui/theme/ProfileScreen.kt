@@ -3,6 +3,7 @@ package com.example.questadvancelayout_.ui.theme
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -202,12 +203,19 @@ fun ProfileScreen(modifier: Modifier) {
             }
         }
 
-
-
-
-
-
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+        ){
+            Text(
+                stringResource(id = R.string.legal),
+                fontSize = 12.sp,
+                color = Color.Gray,
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = 24.dp)
+            )
+        }
 
     }
-
 }
