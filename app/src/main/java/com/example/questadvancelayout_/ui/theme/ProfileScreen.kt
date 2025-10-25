@@ -148,6 +148,62 @@ fun ProfileScreen(modifier: Modifier) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
+        Card(
+            modifier = Modifier
+                .height(56.dp)
+                .fillMaxWidth(),
+            colors = CardDefaults.cardColors(
+                containerColor = Color(0xFF2C2C2E)
+            ),
+            shape = RoundedCornerShape(16.dp)
+        ){
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(horizontal = 16.dp)
+            ){
+                Icon(Icons.Default.Settings, "Paket CNC dan Piping", tint = Color.White)
+                Spacer(modifier= Modifier.width(16.dp))
+                Text(
+                    stringResource(id = R.string.menu_3),
+                    fontSize = 16.sp,
+                    color = Color.White,
+                    modifier = Modifier.weight(1f)
+                )
+                Icon(Icons.Default.KeyboardArrowRight, null, tint = Color.Gray)
+            }
+        }
+
+        Spacer(modifier = Modifier.height(32.dp))
+
+        Card(
+            modifier = Modifier
+                .height(50.dp)
+                .fillMaxWidth(0.8f),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.Yellow
+            ),
+            shape = RoundedCornerShape(25.dp)
+        ){
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.Center,
+                modifier = Modifier.fillMaxSize()
+            ){
+                Icon(Icons.Default.ExitToApp, "LogOut", tint = Color.White)
+                Spacer(modifier= Modifier.width(8.dp))
+                Text(
+                    stringResource(id = R.string.keluar),
+                    fontSize = 16.sp,
+                    color = Color.White,
+                    fontWeight = FontWeight.Bold
+                )
+            }
+        }
+
+
+
 
 
 
