@@ -22,7 +22,9 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.questadvancelayout_.R
 
 @Composable
@@ -72,4 +74,14 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
             fontSize = 16.sp,
             color = Color.Gray
         )
+        Spacer(modifier = Modifier.height(24.dp))
+        Text(
+            text = "Saya seorang Back End Developer",
+            fontSize = 16.sp,
+            color = Color.White
+        )
+
+        Spacer(modifier = Modifier.height(32.dp
+
+
 }
