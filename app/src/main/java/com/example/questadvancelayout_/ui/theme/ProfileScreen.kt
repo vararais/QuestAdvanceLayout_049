@@ -104,7 +104,7 @@ fun ProfileScreen(modifier: Modifier) {
                     .fillMaxSize()
                     .padding(horizontal = 16.dp)
             ){
-                Icon(Icons.Default.Lock, "Privacy", tint = Color.White)
+                Icon(Icons.Default.Lock, "Paket Bore Up", tint = Color.White)
                 Spacer(modifier = Modifier.width(16.dp))
                 Text(
                     stringResource(id = R.string.menu_1),
@@ -116,6 +116,39 @@ fun ProfileScreen(modifier: Modifier) {
             }
 
         }
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Card(
+            modifier = Modifier
+                .height(56.dp)
+                .fillMaxWidth(),
+            colors = CardDefaults.cardColors(
+                containerColor = Color(0xFF2C2C2E)
+            ),
+            shape = RoundedCornerShape(16.dp)
+        ){
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(horizontal = 16.dp)
+            ){
+                Icon(Icons.Default.List, "Paket Flow dan ECU", tint = Color.White)
+                Spacer(modifier= Modifier.width(16.dp))
+                Text(
+                    stringResource(id = R.string.menu_2),
+                    fontSize = 16.sp,
+                    color = Color.White,
+                    modifier = Modifier.weight(1f)
+                )
+                Icon(Icons.Default.KeyboardArrowRight, null, tint = Color.Gray)
+            }
+        }
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+
 
 
 
