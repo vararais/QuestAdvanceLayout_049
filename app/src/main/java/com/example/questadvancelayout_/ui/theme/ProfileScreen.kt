@@ -14,6 +14,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.Icon
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -58,4 +59,14 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
         }
 
         Spacer(modifier = Modifier.height(16.dp))
+
+        Text(
+            text = "Abra Yudhistira",
+            fontSize = 26.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.White
+        )
+
+
+
 }
