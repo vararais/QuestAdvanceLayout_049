@@ -76,7 +76,7 @@ fun ProfileScreen(modifier: Modifier) {
         )
         Spacer(modifier = Modifier.height(4.dp))
         Text(
-            text = "@abra_yudhistira",
+            text = stringResource(id = R.string.namaalias),
             fontSize = 16.sp,
             color = Color.Gray
         )
